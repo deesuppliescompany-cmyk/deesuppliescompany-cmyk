@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEE SUPPLIES COMPANY LIMITED | Tanzania</title>
+<meta name="description" content="DEE SUPPLIES COMPANY LIMITED - General supplies, products and direct ordering in Tanzania.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b1f3a">
+<meta property="og:title" content="DEE SUPPLIES COMPANY LIMITED">
+<meta property="og:description" content="Shop and order products from DEE SUPPLIES COMPANY LIMITED, Tanzania.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://deesupplies.co.tz/">
+
+<style>
+:root{--navy:#0b1f3a;--gold:#e9b949;--ink:#172033;--muted:#667085;--bg:#f5f7fb}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg)}
+header{background:var(--navy);color:#fff;padding:15px 6%;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:52px;height:52px;border:2px solid var(--gold);border-radius:14px;display:grid;place-items:center;color:var(--gold);font-weight:900;font-size:19px}.brand strong{display:block;letter-spacing:.7px}.brand small{color:#d5deeb}
+nav a{color:#fff;text-decoration:none;margin:0 9px;font-size:14px}
+.hero{padding:70px 6%;background:linear-gradient(110deg,#0b1f3a 0%,#153b68 70%,#20558a 100%);color:white;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.05;margin:12px 0}.hero h1 span{color:var(--gold)}.hero p{font-size:17px;line-height:1.7;color:#e1e9f4;max-width:620px}
+.btn{display:inline-block;border:0;border-radius:9px;padding:13px 20px;background:var(--gold);color:#15233a;font-weight:700;text-decoration:none;cursor:pointer}.hero-card{background:#ffffff12;border:1px solid #ffffff30;border-radius:20px;padding:28px}.hero-card .big{font-size:64px}.hero-card h3{margin:5px 0 8px}.hero-card p{font-size:14px}
+section{padding:55px 6%}.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin-bottom:25px}.section-head h2{font-size:30px;margin:0 0 8px}.section-head p{margin:0;color:var(--muted)}
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0}.filter{border:1px solid #d5dce7;background:white;border-radius:22px;padding:9px 15px;cursor:pointer}.filter.active{background:var(--navy);color:white}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product{background:white;border:1px solid #e6eaf0;border-radius:15px;overflow:hidden;box-shadow:0 5px 20px #13284a08}.product img{width:100%;height:190px;object-fit:cover;background:#e9edf4}.product-body{padding:17px}.tag{font-size:11px;color:#936b12;background:#fff4d6;border-radius:20px;padding:6px 9px;display:inline-block}.product h3{margin:12px 0 7px}.price{font-size:19px;font-weight:800;color:var(--navy)}.product-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:14px}.product button{background:var(--navy);color:white;border:0;border-radius:8px;padding:10px 13px;cursor:pointer;font-weight:700}
+.about{background:#fff;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about p{color:var(--muted);line-height:1.8}.features{display:grid;grid-template-columns:1fr 1fr;gap:12px}.feature{padding:18px;background:var(--bg);border-radius:12px;font-weight:700}
+.contact{background:var(--navy);color:white;border-radius:18px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.contact p{color:#d5deeb}
+footer{padding:25px 6%;background:#07162b;color:#c6d0df;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px}
+.cartbar{position:fixed;right:18px;bottom:18px;background:var(--gold);color:#172033;padding:13px 18px;border-radius:30px;font-weight:800;box-shadow:0 6px 22px #0002;cursor:pointer;border:0}
+@media(max-width:800px){.hero,.about{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}nav{width:100%}.hero{padding-top:48px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.product img{height:220px}section{padding:40px 5%}.hero{padding:45px 5%}}
+
+.admin-section{background:#eef2f7}.admin-card{background:#fff;border:1px solid #dfe5ee;border-radius:16px;padding:24px;box-shadow:0 5px 20px #13284a0a}
+.admin-row{display:flex;gap:10px;max-width:520px}.admin-row input,.form-grid input,.admin-card textarea{width:100%;border:1px solid #ccd5e2;border-radius:9px;padding:12px;font:inherit}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.admin-card textarea{min-height:100px;margin-top:12px;resize:vertical}
+.admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.secondary-btn,.logout-btn{border:1px solid #ccd5e2;background:white;border-radius:9px;padding:11px 15px;cursor:pointer;font-weight:700}
+.admin-top{display:flex;justify-content:space-between;gap:15px;align-items:flex-start}.admin-msg{margin:10px 0 0;color:#b42318}
+.admin-product{display:flex;align-items:center;gap:14px;padding:12px 0;border-top:1px solid #e7ebf1}.admin-product img{width:70px;height:55px;object-fit:cover;border-radius:8px;background:#eef2f7}.admin-product-info{flex:1}.admin-product-actions{display:flex;gap:7px;flex-wrap:wrap}.mini-btn{border:0;border-radius:7px;padding:8px 10px;cursor:pointer;font-weight:700;background:#0b1f3a;color:#fff}.danger{background:#b42318}.stock{font-size:12px;color:#667085}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}.admin-row{flex-direction:column}.admin-top{flex-direction:column}}
+
+</style>
+</head>
+<body>
+<header>
+ <div class="brand"><div class="logo">DEE</div><div><strong>DEE SUPPLIES</strong><small>COMPANY LIMITED</small></div></div>
+ <nav><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About Us</a><a href="#contact">Contact</a><a href="#tracking">Fuatilia Order</a><a href="#donate">Support</a><a href="#admin">Admin</a></nav>
+</header>
+<main>
+<div class="hero" id="home">
+ <div><span class="tag">YOUR TRUSTED SUPPLY PARTNER</span><h1>Everything you need.<br><span>Delivered.</span></h1>
+ <p>Shop quality products across multiple categories with DEE SUPPLIES COMPANY LIMITED. Browse our collection and place your order directly with our team in Dar es Salaam.</p>
+ <a class="btn" href="#products">Explore Products&nbsp; →</a></div>
+ <div class="hero-card"><div class="big">📦</div><h3>Reliable • Convenient • Customer-focused</h3><p>From everyday essentials to electronics and fashion, we're here to make sourcing simple.</p></div>
+</div>
+<section id="products">
+ <div class="section-head"><div><h2>Featured Products</h2><p>Browse our sample catalogue. Prices shown are placeholders.</p></div></div>
+ <div class="filters" id="filters"></div><div class="grid" id="productGrid"></div>
+</section>
+<section class="about" id="about">
+ <div><span class="tag">ABOUT DEE SUPPLIES</span><h2>Making shopping and sourcing easier.</h2><p>DEE SUPPLIES COMPANY LIMITED is a Dar es Salaam-based general supplies business focused on connecting customers with a range of products through a convenient ordering experience.</p><p>Choose your items from our catalogue and send your order directly to our team on WhatsApp. Our team can confirm availability, final pricing and delivery arrangements.</p></div>
+ <div class="features"><div class="feature">🚚 Delivery enquiries</div><div class="feature">🛍️ Multiple product categories</div><div class="feature">📲 Direct WhatsApp orders</div><div class="feature">🤝 Customer-focused service</div></div>
+</section>
+
+<section id="tracking" class="admin-section">
+ <div class="section-head"><div><h2>📦 Fuatilia Order</h2><p>Weka namba ya order uone status yake kwenye kifaa hiki.</p></div></div>
+ <div class="admin-card">
+  <div class="admin-row">
+   <input id="trackId" placeholder="Mfano: ORD-123456">
+   <button class="btn" onclick="trackOrder()">Fuatilia</button>
+  </div>
+  <div id="trackingResult" style="margin-top:15px"></div>
+  <p class="small-note">Mfumo huu wa demo hutumia localStorage ya browser. Kwa website ya kweli inayofanya kazi kwenye simu tofauti, tutaiunganisha na database.</p>
+ </div>
+</section>
+
+<section id="donate">
+ <div class="contact">
+  <div><h2>❤️ Support DEE SUPPLIES</h2><p>Unaweza kusaidia biashara yetu kwa mchango wa hiari. Tutaweka namba rasmi ya malipo baada ya kuchagua njia ya malipo.</p></div>
+  <button class="btn" onclick="alert('Sehemu ya malipo iko tayari kuunganishwa na namba/merchant account rasmi.')">Support / Donate</button>
+ </div>
+</section>
+
+<section id="contact"><div class="contact"><div><h2>Ready to place an order?</h2><p>Contact DEE SUPPLIES COMPANY LIMITED for product availability and delivery details.</p><strong>Dar es Salaam, Tanzania · 0786515544</strong></div><a class="btn" href="https://wa.me/255786515544" target="_blank">Chat on WhatsApp</a></div></section>
+
+<section id="admin" class="admin-section">
+ <div class="section-head"><div><h2>🔐 Admin — Manage Products</h2><p>Ongeza bidhaa mwenyewe bila kubadilisha code.</p></div></div>
+ <div id="adminLogin" class="admin-card">
+  <h3>Admin Login</h3><p>Demo password: <strong>1234</strong></p>
+  <div class="admin-row"><input id="adminPassword" type="password" placeholder="Ingiza password"><button class="btn" onclick="adminLogin()">Ingia</button></div>
+  <p id="loginMsg" class="admin-msg"></p>
+ </div>
+ <div id="adminPanel" class="admin-card" style="display:none">
+  <div class="admin-top"><div><h3 id="formTitle">➕ Ongeza Bidhaa</h3><p>Bidhaa mpya itaonekana kwenye Products.</p></div><button class="logout-btn" onclick="adminLogout()">Toka</button></div>
+  <form id="productForm" onsubmit="saveProduct(event)">
+   <input type="hidden" id="editId">
+   <div class="form-grid">
+    <input id="pName" required placeholder="Jina la bidhaa">
+    <input id="pPrice" required type="number" min="0" placeholder="Bei (TSh)">
+    <input id="pCat" required placeholder="Category mfano Perfumes">
+    <input id="pStock" required type="number" min="0" placeholder="Stock">
+    <input id="pImage" type="file" accept="image/*">
+    <input id="pImageUrl" placeholder="Au weka Image URL (optional)">
+   </div>
+   <textarea id="pDesc" required placeholder="Maelezo ya bidhaa"></textarea>
+   <div class="admin-actions"><button class="btn" type="submit" id="saveBtn">Hifadhi Bidhaa</button><button type="button" class="secondary-btn" onclick="resetProductForm()">Futa Form</button></div>
+  </form>
+  <h3 style="margin-top:30px">📦 Bidhaa Zako</h3><div id="adminProducts"></div>
+ </div>
+</section>
+
+</main>
+<footer><span>© <span id="year"></span> DEE SUPPLIES COMPANY LIMITED</span><span>Dar es Salaam, Tanzania · 0786515544</span></footer>
+<button class="cartbar" onclick="checkout()">🛒 Order list (<span id="cartCount">0</span>)</button>
+
+<script>
+const defaultProducts=[
+{name:"Classic Sneakers",cat:"Shoes",price:65000,emoji:"👟",desc:"Everyday casual footwear",stock:20,image:""},
+{name:"Men's Smart Shirt",cat:"Clothing",price:35000,emoji:"👔",desc:"Smart-casual wardrobe essential",stock:20,image:""},
+{name:"Team Football Jersey",cat:"Jerseys",price:30000,emoji:"⚽",desc:"Football fan jersey",stock:20,image:""},
+{name:"Smartphone",cat:"Phones",price:320000,emoji:"📱",desc:"Smartphone — model subject to availability",stock:10,image:""},
+{name:"Wireless Earbuds",cat:"Phones",price:45000,emoji:"🎧",desc:"Portable audio accessory",stock:20,image:""},
+{name:"LED Television",cat:"Electronics",price:480000,emoji:"📺",desc:"LED TV — size/model to be confirmed",stock:8,image:""},
+{name:"Home Refrigerator",cat:"Electronics",price:750000,emoji:"🧊",desc:"Refrigerator — capacity/model to be confirmed",stock:6,image:""},
+{name:"Women's Handbag",cat:"Clothing",price:55000,emoji:"👜",desc:"Everyday fashion accessory",stock:15,image:""},
+{name:"Running Shoes",cat:"Shoes",price:80000,emoji:"👟",desc:"Comfortable sports footwear",stock:20,image:""}];
+let products=JSON.parse(localStorage.getItem("deeProducts")||"null")||defaultProducts;
+let cart=[],active="All";
+products.forEach((p,i)=>{if(!p.id)p.id="p"+i});
+
+function saveProducts(){localStorage.setItem("deeProducts",JSON.stringify(products))}
+function money(n){return "TSh "+Number(n).toLocaleString("en-US")}
+function imageFor(p){return p.image||"https://placehold.co/600x400/f0f3f8/17365d?text="+encodeURIComponent((p.emoji||"📦")+" "+p.name)}
+function renderFilters(){let cats=["All",...new Set(products.map(p=>p.cat))];document.getElementById("filters").innerHTML=cats.map(c=>'<button class="filter '+(active===c?"active":"")+'" onclick="active=this.textContent;renderFilters();renderProducts()">'+c+"</button>").join("")}
+function renderProducts(){let list=active==="All"?products:products.filter(p=>p.cat===active);document.getElementById("productGrid").innerHTML=list.map(p=>'<article class="product"><img src="'+imageFor(p)+'" alt="'+p.name+'" loading="lazy"><div class="product-body"><span class="tag">'+p.cat+'</span><h3>'+p.name+'</h3><p style="color:#667085;font-size:14px">'+p.desc+'</p><div class="stock">Stock: '+(p.stock||0)+'</div><div class="product-foot"><span class="price">'+money(p.price)+'</span><button '+(Number(p.stock)<=0?"disabled":"")+' onclick="add(\''+p.id+'\')">'+(Number(p.stock)<=0?"Out of stock":"Add to order +")+"</button></div></div></article>").join("")}
+function add(id){let p=products.find(x=>x.id===id);if(!p||p.stock<=0)return;cart.push(id);document.getElementById("cartCount").textContent=cart.length}
+function checkout(){if(!cart.length){alert("Please add a product to your order first.");return}let c={};cart.forEach(id=>c[id]=(c[id]||0)+1);let msg="Hello DEE SUPPLIES COMPANY LIMITED, I would like to order:%0A";Object.keys(c).forEach((id,i)=>{let p=products.find(x=>x.id===id);msg+=(i+1)+". "+p.name+" x"+c[id]+" - "+money(p.price*c[id])+"%0A"});window.open("https://wa.me/255786515544?text="+msg,"_blank")}
+function adminLogin(){if(document.getElementById("adminPassword").value==="1234"){sessionStorage.deeAdmin="1";showAdmin()}else document.getElementById("loginMsg").textContent="Password si sahihi."}
+function adminLogout(){sessionStorage.removeItem("deeAdmin");document.getElementById("adminPanel").style.display="none";document.getElementById("adminLogin").style.display="block"}
+function showAdmin(){document.getElementById("adminLogin").style.display="none";document.getElementById("adminPanel").style.display="block";renderAdminProducts()}
+function resetProductForm(){document.getElementById("productForm").reset();document.getElementById("editId").value="";document.getElementById("formTitle").textContent="➕ Ongeza Bidhaa";document.getElementById("saveBtn").textContent="Hifadhi Bidhaa"}
+function saveProduct(e){e.preventDefault();let id=document.getElementById("editId").value;let old=products.find(p=>p.id===id);let file=document.getElementById("pImage").files[0];let finish=image=>{let item={id:id||"p_"+Date.now(),name:pName.value.trim(),cat:pCat.value.trim(),price:Number(pPrice.value),stock:Number(pStock.value),desc:pDesc.value.trim(),image:image||pImageUrl.value.trim()||(old?old.image:""),emoji:"📦"};if(id)products[products.findIndex(p=>p.id===id)]=item;else products.unshift(item);saveProducts();renderFilters();renderProducts();renderAdminProducts();resetProductForm();alert(id?"Bidhaa imebadilishwa.":"Bidhaa imeongezwa.")};if(file){let r=new FileReader();r.onload=()=>finish(r.result);r.readAsDataURL(file)}else finish("")}
+function editProduct(id){let p=products.find(x=>x.id===id);if(!p)return;editId.value=p.id;pName.value=p.name;pPrice.value=p.price;pCat.value=p.cat;pStock.value=p.stock;pDesc.value=p.desc;pImageUrl.value=p.image&&p.image.startsWith("http")?p.image:"";formTitle.textContent="✏️ Edit Bidhaa";saveBtn.textContent="Hifadhi Mabadiliko";location.hash="admin"}
+function deleteProduct(id){let p=products.find(x=>x.id===id);if(p&&confirm("Unataka kufuta "+p.name+"?")){products=products.filter(x=>x.id!==id);saveProducts();renderFilters();renderProducts();renderAdminProducts()}}
+function renderAdminProducts(){adminProducts.innerHTML=products.map(p=>'<div class="admin-product"><img src="'+imageFor(p)+'"><div class="admin-product-info"><strong>'+p.name+'</strong><div>'+money(p.price)+' · '+p.cat+'</div><div class="stock">Stock: '+p.stock+'</div></div><div class="admin-product-actions"><button class="mini-btn" onclick="editProduct(\''+p.id+'\')">Edit</button><button class="mini-btn danger" onclick="deleteProduct(\''+p.id+'\')">Delete</button></div></div>').join("")}
+
+function createDemoOrder(){
+  const id="ORD-"+Math.floor(100000+Math.random()*900000);
+  const order={id,status:"Order Received",createdAt:new Date().toISOString()};
+  const orders=JSON.parse(localStorage.getItem("deeOrders")||"[]");
+  orders.unshift(order); localStorage.setItem("deeOrders",JSON.stringify(orders));
+  return id;
+}
+function trackOrder(){
+  const id=(document.getElementById("trackId").value||"").trim().toUpperCase();
+  const box=document.getElementById("trackingResult");
+  if(!id){box.innerHTML="<p style='color:#b42318'>Weka Order Number kwanza.</p>";return;}
+  const orders=JSON.parse(localStorage.getItem("deeOrders")||"[]");
+  const o=orders.find(x=>x.id===id);
+  if(!o){box.innerHTML="<p style='color:#b42318'>Order haijapatikana kwenye browser hii.</p>";return;}
+  box.innerHTML="<div class='admin-card'><strong>"+o.id+"</strong><p>Status: <strong>"+o.status+"</strong></p><p>"+new Date(o.createdAt).toLocaleString()+"</p></div>";
+}
+
+document.getElementById("year").textContent=new Date().getFullYear();renderFilters();renderProducts();if(sessionStorage.deeAdmin==="1")showAdmin();
+</script>
+
+</body></html>
